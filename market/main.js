@@ -8,18 +8,17 @@ let tbody = document.getElementById('tbody');
 let dataPro = [];
 let mood = 'create';
 let tmp;
+
 const date = new Date()
 function myDateNow(){
     const year = date.getFullYear()
     const month = date.getMonth() + 1
     const day = date.getDate()
-    const hour = date.getHours() - 12
+    const hour = date.getHours()
     const minutes = date.getMinutes()
     const dateNow = `(${day}/${month}/${year}) - ${hour}:${minutes}`
     return dateNow;
 }
-
-
 
 if(localStorage.product != null){
     dataPro = JSON.parse(localStorage.product);

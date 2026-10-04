@@ -23,6 +23,24 @@ body{
 .head h2 span{
     color: #0493fa;
 }
+.head h2 img{
+    width: 35px;
+    position: relative;
+    left: 8px;
+    top: 9px;
+    animation: egp 2s linear infinite;
+}
+.head h2 img:hover{
+    animation-play-state: paused;
+}
+@keyframes egp {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 input{
     width: 100%;
     height: 30px;
@@ -39,6 +57,11 @@ input:focus{
     transform: scale(1.05);
     background-color: #000;
     box-shadow: 2px 2px 25px #0493fa74;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 button{
     width: 95%;
@@ -65,6 +88,10 @@ button:hover{
 }
 .outputs{
     margin-top: 10px;
+}
+.table{
+    overflow: auto;
+    height: 275px;
 }
 table{
     width: 100%;
@@ -99,6 +126,9 @@ small{
     box-shadow: 2px 2px 25px #ff000071;
 }
 @media (max-width: 767px) {
+    .table{
+        height: 200px;
+    }
     table button{
         font-size: 10px;
         border-radius: 18px;

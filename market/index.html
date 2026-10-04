@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="o.png">
     <title>market | KO</title>
 </head>
 <body>
     
     <div class="container">
         <div class="head">
-            <h2><span>m</span>et<span>oo</span> market</h2>
+            <h2><span>m</span>et<span>o</span><img src="o.png" alt=""> market</h2>
             <p>مشروع لإدارة نظام الشكك في المحلات</p>
         </div>
         <div class="inputs">
@@ -22,7 +23,8 @@
         <div class="outputs">
             <input onkeyup="searchData(this.value)" type="text" placeholder="البحث" id="search">
         </div>
-        <table>
+        <div class="table">
+            <table>
             <tr>
                 <th>id</th>
                 <th>الاسم</th>
@@ -34,6 +36,7 @@
             <tbody id="tbody">
             </tbody>
         </table>
+        </div>
     </div>
 
     <script src="main.js"></script>
